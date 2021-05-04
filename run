@@ -1,0 +1,4 @@
+docker stop miner
+docker rm miner
+docker build -t miner:v2 .
+docker run -d --name miner miner:v2
